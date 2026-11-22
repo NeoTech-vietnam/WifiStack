@@ -19,3 +19,8 @@ are rejected by both the sender and receiver. Module main/master pushes do not
 trigger reference CI, and manual module runs must select a development branch.
 
 See [setup and development instructions](https://github.com/NeoTech-vietnam/neocam_csw/blob/main/docs/module-integration.md).
+
+## Documentation
+
+Read the [published WifiStack specification](https://neotech-vietnam.github.io/WifiStack/specification.html)
+or build the [reStructuredText documentation](docs/index.rst) from this repository.
