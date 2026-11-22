@@ -2,7 +2,7 @@ project = "WifiStack"
 root_doc = "index"
 language = "en"
 nitpicky = True
-html_theme = "alabaster"
+html_theme = "furo"
 html_static_path = ["_static"]
 html_css_files = ["specifications.css"]
 # Search result snippets fetch pages, which browsers block for file:// previews.

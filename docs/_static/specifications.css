@@ -5,7 +5,7 @@ table.specification-fields {
 table.specification-fields th:first-child,
 table.specification-fields td:first-child {
     width: 28%;
-    background-color: #eef2f6;
+    background-color: var(--color-background-secondary);
 }
 
 table.specification-fields td {
