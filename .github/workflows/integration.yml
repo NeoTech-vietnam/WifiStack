@@ -1,0 +1,17 @@
+name: WifiStack reference integration
+on:
+  push:
+    branches-ignore: [main, master]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: module-reference-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  integration:
+    uses: NeoTech-vietnam/ci-workflows/.github/workflows/module-integration.yml@v1.3.0
+    with:
+      config: ci_targets.yml
+    secrets:
+      INTEGRATION_DISPATCH_TOKEN: ${{ secrets.INTEGRATION_DISPATCH_TOKEN }}

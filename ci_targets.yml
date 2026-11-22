@@ -1,0 +1,4 @@
+ref_projects:
+  - repository: NeoTech-vietnam/neocam_csw
+    branch: feat/wifistack
+    package: WifiStack
