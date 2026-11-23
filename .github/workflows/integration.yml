@@ -1,7 +1,7 @@
 name: WifiStack reference integration
 on:
   push:
-    branches-ignore: [main, master]
+    branches: ['**']
   workflow_dispatch:
 permissions:
   contents: read
@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   integration:
-    uses: NeoTech-vietnam/ci-workflows/.github/workflows/module-integration.yml@v1.3.1
+    uses: NeoTech-vietnam/ci-workflows/.github/workflows/module-integration.yml@v1.3.2
     with:
       config: ci_targets.yml
     secrets:
